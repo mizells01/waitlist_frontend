@@ -14,8 +14,7 @@ const NavLinks = [
     {
         label: "Upload",
         authRequired: true,
-        href: "/waitlist_upload"
-        //href: "/http://localhost:8000/api/my_upload/"
+        href: "/waitlist_bulk_info"
     }
 
 ]
