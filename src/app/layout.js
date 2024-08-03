@@ -1,12 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "@/components/authProvider";
-import { ThemeProvider } from "@/components/themeProvider"
+import { AuthProvider } from "../components/authProvider";
+import { ThemeProvider } from "../components/themeProvider";
 
 import { Inter as FontSans } from "next/font/google"
  
-import { cn } from "@/lib/utils"
-import BaseLayout from "@/components/layout/BaseLayout";
+import { cn } from "../lib/utils";
+import BaseLayout from "../components/layout/BaseLayout";
 import { Suspense } from "react";
  
 const fontSans = FontSans({

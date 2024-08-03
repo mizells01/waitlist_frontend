@@ -2,10 +2,11 @@
 
 import React, { useState } from 'react'
 import WaitlistTable from '../waitlists/table'
-import { Button } from '@/components/ui/button'
+//import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import * as XLSX from "xlsx";
 
-export default function page() {
+export default function Page() {
   //file
   const WAITLIST_UPLOAD_API_URL = "/api/waitlist_upload/"
 

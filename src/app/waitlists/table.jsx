@@ -1,11 +1,11 @@
 "use client"
 
-import { useAuth } from "@/components/authProvider"
+import { useAuth } from "../../components/authProvider";
 import {
     Table, TableBody,  TableCaption,
     TableCell, TableFooter, TableHead,
     TableHeader, TableRow,
-  } from "@/components/ui/table"
+  } from "../../components/ui/table"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
 import useSWR from "swr"

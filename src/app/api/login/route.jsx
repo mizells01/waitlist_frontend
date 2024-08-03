@@ -1,6 +1,7 @@
 "use server";
-import { DJANGO_API_ENDPOINT } from "@/config/defaults";
-import { getRefreshToken, getToken, setRefreshToken, setToken } from "@/lib/auth";
+//import { DJANGO_API_ENDPOINT } from "@/config/defaults";
+import { DJANGO_API_ENDPOINT } from "../../../config/defaults";
+import { getRefreshToken, getToken, setRefreshToken, setToken } from "../../../lib/auth";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 

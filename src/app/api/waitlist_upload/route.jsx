@@ -1,6 +1,6 @@
-import { getToken } from "@/lib/auth";
+import { getToken } from "../../../lib/auth";
 import { NextResponse } from "next/server";
-import { DJANGO_API_ENDPOINT } from "@/config/defaults";
+import { DJANGO_API_ENDPOINT } from "../../../config/defaults";
 import ApiProxy from "../proxy";
 
 

@@ -1,10 +1,11 @@
 "use client"
 
-import { useAuth } from "@/components/authProvider";
+//import { useAuth } from "@/components/authProvider"
+import { useAuth } from "../../components/authProvider"
 const LOGOUT_URL = "/api/logout/"
 
 export default function Page() {
-    const auth = useAuth()
+    const auth = useAuth();
     
     async function handleClick (event) {
         event.preventDefault()

@@ -1,7 +1,9 @@
 'use client'
 
-import { useAuth } from "@/components/authProvider";
-import { ThemeToggleButton } from "@/components/themeToggleButton";
+//import { useAuth } from "@/components/authProvider";
+import { useAuth } from "../components/authProvider"
+//import { ThemeToggleButton } from "@/components/themeToggleButton";
+import { ThemeToggleButton } from "../components/themeToggleButton"
 import Image from "next/image";
 import { useState } from "react";
 import useSWR from "swr";

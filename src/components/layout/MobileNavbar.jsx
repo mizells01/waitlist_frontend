@@ -3,8 +3,8 @@
 import Link from "next/link"
 import { Menu} from "lucide-react"
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "../../components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "../../components/ui/sheet";
 import { useAuth } from "../authProvider"
 
 import NavLinks, {NonUserLinks} from "./NavLinks";

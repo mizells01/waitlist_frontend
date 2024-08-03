@@ -3,10 +3,14 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { useAuth } from "@/components/authProvider"
+//import { Button } from "@/components/ui/button"
+import { Button } from "../../components/ui/button"
+import { Input } from "../../components/ui/input"
+import { Label } from "../../components/ui/label"
+import { useAuth } from "../../components/authProvider"
+//import { Input } from "@/components/ui/input"
+//import { Label } from "@/components/ui/label"
+//import { useAuth } from "@/components/authProvider"
 
 const LOGIN_URL = "/api/login/"
 
