@@ -1,5 +1,6 @@
 "use client"
 
+import fetcher from "../../lib/fetcher";
 import { useAuth } from "../../components/authProvider";
 import {
     Table, TableBody,  TableCaption,
@@ -12,21 +13,6 @@ import useSWR from "swr"
 
 const WAITLIST_API_URL = "/api/waitlists/"
 
-const fetcher = async url => {
-    const res = await fetch(url)
-   
-    // If the status code is not in the range 200-299,
-    // we still try to parse and throw it.
-    if (!res.ok) {
-      const error = new Error('An error occurred while fetching the data.')
-      // Attach extra info to the error object.
-      error.info = await res.json()
-      error.status = res.status
-      throw error
-    }
-   
-    return res.json()
-  }
   
   export default function WaitlistTable() {
     const router = useRouter() //from next/navigation
@@ -50,6 +36,9 @@ const fetcher = async url => {
           <TableRow>
             <TableHead className="w-[100px]">ID</TableHead>
             <TableHead>Email</TableHead>
+            <TableHead>Description</TableHead>
+            <TableHead>Num Guests</TableHead>
+            <TableHead>Updated</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -57,6 +46,9 @@ const fetcher = async url => {
             <TableRow className="hover: cursor-pointer" key={`item-${idx}`} onClick={e=>router.push(`/waitlists/${item.id}`)}>
               <TableCell className="font-medium">{item['id']}</TableCell>
               <TableCell className="font-medium">{item['email']}</TableCell>
+              <TableCell className="font-medium">{item['description']}</TableCell>
+              <TableCell className="font-medium text-center">{item['num_guests']}</TableCell>
+              <TableCell className="font-medium text-center">{item['updated']}</TableCell>
             </TableRow>
           ))}
         </TableBody>
